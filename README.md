@@ -21,8 +21,8 @@
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :users
-- belings_to :groups
+- belongs_to :user
+- belings_to :group
 
 ## groupsテーブル
 |Column|Type|Options|
