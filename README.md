@@ -16,7 +16,8 @@
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|comment|text|null: false|
+|content|text|null: false|
+|image|string||
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 ### Association
