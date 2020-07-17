@@ -1,0 +1,22 @@
+.Main
+  .Main__group
+    .Main__group__name
+      .Main__group__name__box
+        test
+      .Main__group__name__member
+        Member : masa
+    .Main__group__btn
+      = link_to 'Edit','#',class: "Main__group__btn__box"
+  .Main__massage
+    = render "massage-list"
+    = render "massage-list"
+    = render "massage-list"
+
+  .form
+    %form.form_contents
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder:"type a massage"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file",class: "input-box__image__file"}
+      %input{type: "submit",value:"Send",class: "submit-btn"}
