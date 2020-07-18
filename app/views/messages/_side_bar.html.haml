@@ -4,12 +4,17 @@
       .Side__user__box__name
         = current_user.name
       .Side__user__box__icon
-        = link_to "#" do
+        = link_to new_group_path do
           = icon('far', 'edit', class: 'Side__user__box__icon__edit')
         = link_to "/users/:id/edit" do
           = icon('fa', 'cog', class: 'Side__user__box__icon__cog')
   .Side__group
-    = render "group_box"
-    = render "group_box"
-    = render "group_box"
+    - current_user.groups.each do |group|
+      .Side__group__box
+        = link_to '#' do
+          .Side__group__box__name
+            = group.name
+          .Side__group__box__chat
+            まだメッセージがありません
+
 
