@@ -2,11 +2,11 @@
   .Side__user
     .Side__user__box
       .Side__user__box__name
-        masa
+        = current_user.name
       .Side__user__box__icon
         = link_to "#" do
           = icon('far', 'edit', class: 'Side__user__box__icon__edit')
-        = link_to "#" do
+        = link_to "/users/:id/edit" do
           = icon('fa', 'cog', class: 'Side__user__box__icon__cog')
   .Side__group
     = render "group_box"
