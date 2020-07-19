@@ -11,10 +11,11 @@
   .Side__group
     - current_user.groups.each do |group|
       .Side__group__box
-        = link_to '#' do
+        = link_to "/groups/#{group.id}/messages" do
           .Side__group__box__name
             = group.name
           .Side__group__box__chat
-            まだメッセージがありません
+            = group.show_last_message
+            
 
 
