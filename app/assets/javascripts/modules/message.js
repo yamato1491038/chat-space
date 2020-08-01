@@ -12,8 +12,10 @@ $(function(){
                       </div>
                     </div>
                     <div class="Main__message__list__content">
-                      ${message.content}
-                      ${message.image}
+                      <div class="Main__message__list__content__contents">
+                        ${message.content}
+                      </div>
+                      <img class="Main__message__list__content__image" src="${message.image}">
                     </div>
                   </div>`
       return html;

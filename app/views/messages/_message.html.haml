@@ -3,9 +3,10 @@
     .Main__message__list__info__name
       = message.user.name
     .Main__message__list__info__date
-      = message.created_at.strftime("%Y年%m月%d日　%H時%M分")
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
   .Main__message__list__content
     - if message.content.present?
-      = message.content
-    = image_tag message.image.url, class: '?' if message.image.present?
+      %p.Main__message__list__content__contents
+        = message.content
+    = image_tag message.image.url, class: 'Main__message__list__content__image' if message.image.present?
     
