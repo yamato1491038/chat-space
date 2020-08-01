@@ -11,7 +11,7 @@
   .Side__group
     - current_user.groups.each do |group|
       .Side__group__box
-        = link_to "/groups/#{group.id}/messages" do
+        = link_to "/groups/#{group.id}/messages", class: "Side__group__box__link" do
           .Side__group__box__name
             = group.name
           .Side__group__box__chat

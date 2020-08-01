@@ -52,19 +52,20 @@
 
     &__box{
       padding: 20px 20px 40px 20px;
-      
+
+      &__link{
+        text-decoration: none;
+      }
 
       &__name{
         color:#ffffff;
         font-size: 15px;
-        text-decoration: none;
       }
 
       &__chat{
         margin-top: 5px;
         color: #ffffff;
         font-size: 11px;
-        text-decoration: none;
       }
     }
   }
